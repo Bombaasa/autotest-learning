@@ -46,6 +46,5 @@ class MilestonesPage(Edo3Dialog, MasterDetail):
         или при переходе по ссылке)"""
 
         self.check_open()
-        time.sleep(10)
         self.name.should_be(ContainsText(milestone_name))
         self.description.should_be(ContainsText(milestone_description))
